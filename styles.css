@@ -994,10 +994,14 @@ footer {
 /* Mobile menu */
 @media (max-width: 769px) {
   header {
-    padding: 15px 30px;
+    padding: 15px 20px;
   }
 
-  nav {
+  .inner-space {
+    padding: 0 20px;
+  }
+
+  /* nav {
     position: absolute;
     top: 70px;
     right: -100%;
@@ -1008,6 +1012,24 @@ footer {
     gap: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: right 0.4s ease;
+  } */
+
+  nav {
+    position: fixed;
+    top: 70px; /* stays below header */
+    right: -220px;
+    background: #fff;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s ease;
+    height: calc(
+      100vh - 70px
+    ); /* fills screen height but leaves header visible */
+    overflow-y: auto; /* allow scrolling inside menu if too many links */
+    z-index: 1000; /* stays above content */
   }
 
   nav.active {
@@ -1029,6 +1051,193 @@ footer {
 
   .logo {
     padding-left: 0;
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+
+  .inner-space {
+    padding: 20px;
+  }
+
+  .deer-heading,
+  .deer-subheading,
+  .deer-links .fancy-container,
+  .deer-links .simple-container {
+    width: 100% !important;
+  }
+
+  .deer-label span,
+  .deer-subheading span,
+  .deer-links a .fancy,
+  .deer-links a .simple,
+  .chevron span,
+  .wrw-content span {
+    font-size: 15px;
+  }
+
+  .deer-heading span,
+  .about-us-heading span,
+  .service-label span,
+  .collaboration-heading span,
+  .collaboration-number span,
+  .collaboration-text .label,
+  .wrw-heading span,
+  .cu-heading span {
+    font-size: 30px;
+  }
+
+  .hero-seperator {
+    display: none;
+  }
+
+  .deer-links,
+  .hero-content-container {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .hero-container {
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .about-us-container {
+    gap: 30px;
+  }
+
+  .services-hero {
+    height: auto;
+  }
+
+  .who-are-we-container {
+    gap: 50px;
+  }
+
+  .scores {
+    text-align: center;
+  }
+
+  .scores .score span {
+    font-size: 30px;
+  }
+
+  .deer-hero img {
+    height: auto;
+  }
+
+  .partner,
+  .scores-container,
+  .services-container,
+  .collaboration-detail {
+    flex-direction: column;
+  }
+
+  .service {
+    padding: 25px;
+    flex-direction: column;
+  }
+
+  .service-content,
+  .services-hero,
+  .collaboration-content,
+  .collaboration-text .details {
+    width: 100%;
+  }
+
+  .collaboration-container {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .collaboration-hero {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .down-icon {
+    position: absolute;
+    bottom: -90px;
+    left: 10px;
+  }
+
+  .who-are-we-container {
+    padding: 20px;
+  }
+
+  .wrw-content-container {
+    flex-direction: column;
+  }
+
+  .wrw-content {
+    width: 100%;
+  }
+  .cv-heading-container {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+  .cv-cards {
+    flex-direction: column;
+  }
+
+  .cv-cards .card {
+    width: 100%;
+  }
+
+  .contact-us {
+    padding: 20px;
+  }
+
+  .contact-us-form-container {
+    flex-direction: column;
+  }
+
+  .fields-wrapper {
+    flex-direction: column;
+  }
+
+  .input-wrapper input,
+  .comment-wrapper textarea {
+    width: 100%;
+  }
+
+  .submit-form {
+    flex-direction: column;
+  }
+
+  .submit-form button,
+  .submit-form .notice,
+  .contact-us-hero {
+    width: 100%;
+  }
+
+  .contact-us-hero img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .about-us-container,
+  footer {
+    padding: 20px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-info-two {
+    flex-direction: column;
+  }
+
+  .simple-card {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
   }
 }
 
