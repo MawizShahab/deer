@@ -981,6 +981,14 @@ footer {
   .contact-us-hero img {
     margin-left: 0;
   }
+
+  .service-content {
+    width: 350px;
+  }
+
+  .service {
+    padding: 30px;
+  }
 }
 
 /* Mobile menu */
