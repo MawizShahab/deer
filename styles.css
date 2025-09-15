@@ -948,6 +948,11 @@ footer {
     padding: 35px;
   }
 
+  .deer-heading,
+  .deer-subheading {
+    width: 650px;
+  }
+
   .collaboration-hero {
     width: 100%;
   }
