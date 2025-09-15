@@ -683,6 +683,7 @@ nav a:hover {
 .comment-wrapper textarea::placeholder {
   color: rgba(42, 42, 42, 0.47);
   font-size: 19.098px;
+  font-weight: 300;
 }
 
 .comment-wrapper textarea {
@@ -949,6 +950,31 @@ footer {
 
   .collaboration-hero {
     width: 100%;
+  }
+
+  .collaboration-content {
+    width: 450px;
+  }
+
+  .contact-us-form {
+    padding: 15px;
+  }
+
+  .contact-us-details {
+    padding: 15px 15px 0 15px;
+  }
+
+  .comment-wrapper textarea,
+  .input-wrapper input {
+    width: 100%;
+  }
+
+  .submit-form .notice {
+    width: 60%;
+  }
+
+  .contact-us-hero img {
+    margin-left: 0;
   }
 }
 
